@@ -1,28 +1,49 @@
 {
-  "name": "budget-app",
+  "name": "budget-tracker-pwa",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "lite-server": "lite-server"
+    "webpack": "webpack",
+    "prestart": "npm run webpack",
+    "seed": "node seeders/seed.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+    "url": "git+https://github.com/NAHco-code/Budget-Tracker-PWA.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "budget",
+    "tracker",
+    "pwa",
+    "kathryn",
+    "wilkinson",
+    "osu",
+    "trilogy",
+    "bootcamp"
+  ],
+  "author": "k.wilkinson",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+    "url": "https://github.com/NAHco-code/Budget-Tracker-PWA/issues"
   },
-  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "homepage": "https://github.com/NAHco-code/Budget-Tracker-PWA#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "lite-server": "^2.5.3",
-    "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "glob": "^7.1.7",
+    "if-env": "^1.0.4",
+    "lite-server": "^2.6.1",
+    "mongoose": "^5.12.11",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }
