@@ -1,3 +1,10 @@
+<!-- app working currently
+        tracks offline changes
+        *link indexed db to index.html before index.js
+        (as index.js needs indexed db content to function properly)
+        *refactor service worker with more clear and concise code from another activity
+        *incorporate compression -->
+
 # Budget-Tracker-PWA
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)
