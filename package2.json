@@ -1,0 +1,36 @@
+{
+  "name": "budget-tracker-pwa",
+  "version": "1.0.0",
+  "description": "Application to track your budget on and offline",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lite-server": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAHco-code/Budget-Tracker-PWA.git"
+  },
+  "keywords": [
+    "kathryn",
+    "wilkinson",
+    "bootcamp",
+    "budget",
+    "tracker",
+    "pwa"
+  ],
+  "author": "k.wilkinson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NAHco-code/Budget-Tracker-PWA/issues"
+  },
+  "homepage": "https://github.com/NAHco-code/Budget-Tracker-PWA#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "lite-server": "^2.6.1",
+    "mongoose": "^5.12.11",
+    "morgan": "^1.10.0"
+  }
+}
