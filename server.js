@@ -16,11 +16,9 @@ app.use(require("./routes/api.js"));
 app.use(logger("dev"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/workout",
+  process.env.MONGODB_URI || "mongodb://localhost/budget",
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
     useFindAndModify: false
   }
 );
