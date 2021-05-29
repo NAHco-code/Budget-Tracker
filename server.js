@@ -6,14 +6,13 @@ const mongoose = require("mongoose");
 const PORT = 3001;
 const app = express();
 
-app.use(express.static("public"));
+app.use(logger("dev"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(compression());
 
-// routes
-app.use(require("./routes/api.js"));
-app.use(logger("dev"));
+app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/budget",
@@ -24,6 +23,9 @@ mongoose.connect(
     useFindAndModify: false
   }
 );
+
+// routes
+app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
