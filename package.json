@@ -1,10 +1,6 @@
 {
   "name": "budget-tracker-pwa",
   "version": "1.0.0",
-  "engines": {
-    "node": "15.x",
-    "npm": "7.x"
-  },
   "description": "Application to track your budget on and offline",
   "main": "server.js",
   "scripts": {
