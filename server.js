@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(compression());
 
-app.use(express.static("public/build"));
+app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/budget",
