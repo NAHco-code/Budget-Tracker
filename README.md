@@ -20,7 +20,7 @@ With the budget tracker, you're able to add expenses and depsits to your budget 
 
 ## Visuals
 
-![screenshot](./assets/images/{ }) ![screenshot](./assets/images/{ })
+![screenshot](./public/images/PWA-landing-page.PNG)
 
 [Heroku Deployment](https://desolate-harbor-24353.herokuapp.com)
 
